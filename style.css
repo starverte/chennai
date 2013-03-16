@@ -6,9 +6,9 @@ Author URI:     http://starverte.com/
 Description:    Child theme for Flint; developed for Vuyiroli site.
 Template:       flint
 Version:        0.9
-License:	GPLv2 or later
+License:        GPLv2 or later
 License URI:	license.txt
-Tags:		sparks
+Tags:           sparks
 
 A spark sets a fire ablaze, and similarly the Sparks Framework is made up of 'sparks' that help initiate the creative process of website development within WordPress. Often times to start a fire, a person uses flint and steel. With the Sparks Framework it is the same way. 'Flint' (the core theme) and 'Steel' (the core plugin) makeup the foundation of the framework. Then, additional child themes and plugins extend the functionality and user experience.
 
@@ -32,3 +32,69 @@ A spark sets a fire ablaze, and similarly the Sparks Framework is made up of 'sp
 */
 
 @import url("../flint/style.css");
+@import url(http://fonts.googleapis.com/css?family=Jura);
+
+a,
+a:visited {
+	color: #a93b19;
+}
+h1, h2, h3 {
+	font-family: 'Jura', sans-serif;
+}
+#masthead hgroup {
+	background: #f9e470;
+	min-height: 150px;
+	padding: 1em 0;
+}
+.logo {
+	margin: 0 1em;
+}
+.site-title {
+	font-size: 36px;
+}
+.site-description {
+	font-size: 15px;
+}
+
+
+/* =Menu
+----------------------------------------------- */
+
+.main-navigation {
+	background: none;
+}
+.menu-toggle {
+	background: #f4be3c;
+	color: #a93b19;
+	border: 1px solid #464545;
+}
+.main-small-navigation li {
+	background: #fcfcfc;
+	color: #a93b19;
+	border: 1px solid #464545;
+}
+.main-navigation a {
+	border: 1px solid #464545;
+	font-size: 1.07em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.main-navigation a:hover {
+	border: 1px solid #464545;
+	background: #f9e470;
+}
+.main-navigation ul li {
+	background: #f4be3c;
+}
+.give a {
+	background: #b62929;
+	color: #fff;
+	font-variant: normal;
+	font-weight: normal;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-transform: uppercase;
+}
+.give a:hover {
+	background: #a5181a;
+}
