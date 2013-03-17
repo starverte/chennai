@@ -65,6 +65,7 @@ h1, h2, h3 {
 	font-size: 36px;
 }
 .site-description {
+	display: none;
 	font-size: 15px;
 }
 .site-title, .site-description {
@@ -90,6 +91,15 @@ h1, h2, h3 {
 	line-height: 28px;
 	margin: 1px 0 0 0;
 }
+.main-small-navigation #s {
+	display: none;
+}
+/* @media screen and (min-width: 496px) */
+@media screen and (min-width: 31em) {
+	.site-description {
+		display: block;
+	}
+}
 /* @media screen and (min-width: 1024px) */
 @media screen and (min-width: 64em) {
 	.main-navigation #s {
@@ -113,11 +123,18 @@ h1, h2, h3 {
 	background: #f4be3c;
 	color: #a93b19;
 	border: 1px solid #464545;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-variant: small-caps;
 }
-.main-small-navigation li {
-	background: #fcfcfc;
+.main-small-navigation a {
+	background: #fdfba7;
 	color: #a93b19;
 	border: 1px solid #464545;
+	margin: 0 3.333333% 0 0;
+}
+.main-small-navigation a:hover {
+	text-decoration: none;
 }
 .main-navigation a {
 	border: 1px solid #464545;
@@ -132,7 +149,8 @@ h1, h2, h3 {
 .main-navigation ul li {
 	background: #f4be3c;
 }
-.give a {
+.main-navigation .give a,
+.main-small-navigation .give a {
 	background: #b62929;
 	color: #fff;
 	font-variant: normal;
@@ -141,6 +159,9 @@ h1, h2, h3 {
 	padding-right: 2em;
 	text-transform: uppercase;
 }
-.give a:hover {
+.main-small-navigation .give {
+	color: #fff;
+}
+.main-navigation .give a:hover {
 	background: #a5181a;
 }
