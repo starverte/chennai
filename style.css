@@ -43,17 +43,33 @@ h1, h2, h3 {
 }
 #masthead hgroup {
 	background: #f9e470;
-	min-height: 150px;
-	padding: 1em 0;
+	min-height: 120px;
 }
 .logo {
 	margin: 0 1em;
+}
+.bastard-title {
+	float: left;
+}
+.header {
+	border-left: 5px solid #464545;
+	display: none;
+	float: right;
+}
+@media screen and (min-width: 45em) {
+	.header {
+		display: block;
+	}
 }
 .site-title {
 	font-size: 36px;
 }
 .site-description {
 	font-size: 15px;
+}
+.site-title, .site-description {
+	clear: none;
+	margin: 0.5em 0;
 }
 
 
@@ -62,6 +78,36 @@ h1, h2, h3 {
 
 .main-navigation {
 	background: none;
+	margin: 0 0 1em;
+}
+.main-navigation #s {
+	background: #fdfba7;
+	border: none;
+	border-radius: 0;
+	color: #a93b19;
+	display: none;
+	float: right;
+	line-height: 28px;
+	margin: 1px 0 0 0;
+}
+/* @media screen and (min-width: 1024px) */
+@media screen and (min-width: 64em) {
+	.main-navigation #s {
+		display: block;
+		width: 25%!important;
+	}
+}
+/* @media screen and (min-width: 1096px) */
+@media screen and (min-width: 68.5em) {
+	.main-navigation #s {
+		width: 30%!important;
+	}
+}
+/* @media screen and (min-width: 1248px) */
+@media screen and (min-width: 78em) {
+	.main-navigation #s {
+		width: 35%!important;
+	}
 }
 .menu-toggle {
 	background: #f4be3c;
