@@ -34,9 +34,15 @@ A spark sets a fire ablaze, and similarly the Sparks Framework is made up of 'sp
 @import url("../flint/style.css");
 @import url(http://fonts.googleapis.com/css?family=Jura);
 
+body {
+	color: #fff;
+}
 a,
 a:visited {
-	color: #a93b19;
+	color: #f08900;
+}
+a:hover {
+	color: #f4be3c;
 }
 h1, h2, h3 {
 	font-family: 'Jura', sans-serif;
@@ -71,6 +77,10 @@ h1, h2, h3 {
 .site-title, .site-description {
 	clear: none;
 	margin: 0.5em 0;
+}
+::selection {
+	background: #f08900;
+	color: #fff;
 }
 
 
@@ -138,6 +148,7 @@ h1, h2, h3 {
 }
 .main-navigation a {
 	border: 1px solid #464545;
+	color: #a93b19;
 	font-size: 1.07em;
 	font-weight: bold;
 	font-variant: small-caps;
@@ -164,4 +175,29 @@ h1, h2, h3 {
 }
 .main-navigation .give a:hover {
 	background: #a5181a;
+}
+
+
+/* =Content
+----------------------------------------------- */
+
+article {
+	background: #464545;
+}
+.entry-title a,
+.entry-title a:hover {
+	color: #fff;
+}
+
+
+/* =Content
+----------------------------------------------- */
+
+.widget {
+	background: #531f20;
+}
+.widget a,
+.widget a:visited,
+.widget a:hover {
+	color: #fdfba7;
 }
