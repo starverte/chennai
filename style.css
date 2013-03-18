@@ -190,7 +190,7 @@ article {
 }
 
 
-/* =Content
+/* =Sidebar
 ----------------------------------------------- */
 
 .widget {
@@ -200,4 +200,20 @@ article {
 .widget a:visited,
 .widget a:hover {
 	color: #fdfba7;
+}
+.link-widget-link .link-widget {
+	background: #79323a;
+	color: #fff;
+}
+.link-widget-link:hover .link-widget {
+	background: #531f20;
+	color: #fff;
+}
+.give .link-widget {
+	background: #b62929;
+	color: #fff;
+}
+.give:hover .link-widget {
+	background: #a5181a;
+	color: #fff;
 }
