@@ -233,3 +233,31 @@ article {
 	background: #464545;
 	line-height: 2em;
 }
+
+/* =Comments
+----------------------------------------------- */
+
+.commentlist .thread-odd article {
+	background: #531f20;
+}
+.commentlist .thread-even article {
+	background: #464545;
+}
+.commentlist .thread-odd .depth-2 article {
+	background: #612425;
+}
+.commentlist .thread-even .depth-2 article {
+	background: #525151;
+}
+.commentlist .thread-odd .depth-3 article {
+	background: #6e292a;
+}
+.commentlist .thread-even .depth-3 article {
+	background: #5e5d5d;
+}
+.commentlist .thread-odd .depth-4 article {
+	background: #7a2d2f;
+}
+.commentlist .thread-even .depth-4 article {
+	background: #6b6a6a;
+}
