@@ -85,3 +85,55 @@ function flint_custom_header_setup() {
 		)
 	) );
 }
+// BEGIN - Create custom fields
+add_action( 'add_meta_boxes', 'chennai_add_custom_boxes' );
+
+function chennai_add_custom_boxes() {
+	if (has_term('Beneficiaries', 'sp_cause_type')) {
+	add_meta_box('chennai_beneficiary_meta', 'Beneficiary Details', 'chennai_beneficiary_meta', 'sp_cause', 'side', 'high');
+	}
+}
+
+/* Cause Details */
+function chennai_beneficiary_meta() {
+	global $post;
+	$custom = get_post_custom($post->ID);
+	
+?>
+    <p><label>Native Language</label> 
+	<input type="text" size="10" name="cause_lang" value="<?php if (isset($custom['cause_lang'])) { echo $custom["cause_lang"] [0]; } ?>" /></p>
+    <p><label>Native Area</label> 
+	<input type="text" size="10" name="cause_home" value="<?php if (isset($custom['cause_home'])) { echo $custom["cause_home"] [0]; } ?>" /></p>
+    <p><label>Physical Ailments</label> 
+	<input type="text" size="10" name="cause_ailments" value="<?php if (isset($custom['cause_ailments'])) { echo $custom["cause_ailments"] [0]; } ?>" /></p>
+<?php }
+
+/* Save Details */
+add_action('save_post', 'save_chennai_beneficiary_details');
+
+function save_chennai_beneficiary_details(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE && (isset($post_id)) ) {
+	return $post_id;
+  }
+
+  if( defined('DOING_AJAX') && DOING_AJAX && (isset($post_id)) ) { //Prevents the metaboxes from being overwritten while quick editing.
+	return $post_id;
+  }
+
+  if( ereg('/\edit\.php', $_SERVER['REQUEST_URI']) && (isset($post_id)) ) { //Detects if the save action is coming from a quick edit/batch edit.
+	return $post_id;
+  }
+  // save all meta data
+  if (isset($_POST['cause_lang'])) {
+  	update_post_meta($post->ID, "cause_lang", $_POST["cause_lang"]);
+  }
+  if (isset($_POST['cause_home'])) {
+  	update_post_meta($post->ID, "cause_home", $_POST["cause_home"]);
+  }
+  if (isset($_POST['cause_ailments'])) {
+  	update_post_meta($post->ID, "cause_ailments", $_POST["cause_ailments"]);
+  }
+}
+// END - Custom Fields
