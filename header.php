@@ -48,7 +48,8 @@
     <?php if (current_theme_supports('custom-header')) { ?>
           
 		
-        <hgroup>
+        <hgroup class="row-fluid">
+	<div id="left" class="span9">
         	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
             	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
             </a>
@@ -59,10 +60,11 @@
                 <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
             </div>
         <?php } ?>
+	</div><!-- #left -->
         
         <?php $header_image = get_header_image();
 		if ( ! empty( $header_image ) ) { ?>
-            <img class="header" src="<?php header_image(); ?>" width="180" height="120" alt="" />
+            <img class="header span3 visible-desktop" src="<?php header_image(); ?>" alt="" />
         <?php } // if ( ! empty( $header_image ) ) ?>
         
         </hgroup>
