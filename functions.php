@@ -137,3 +137,24 @@ function save_chennai_beneficiary_details(){
   }
 }
 // END - Custom Fields
+function cause_lang( $before = '<div class="cause-lang">Tongue: <span>' , $after = '</span></div>' ) {
+	$custom = get_post_custom();
+	if (isset($custom['cause_lang']) && !empty($custom['cause_lang'] [0])) {
+		$cause_lang = $custom["cause_lang"] [0];
+		printf( $before . $cause_lang . $after);
+	}
+}
+function cause_home( $before = '<div class="cause-home">' , $after = '</div>' ) {
+	$custom = get_post_custom();
+	if (isset($custom['cause_home']) && !empty($custom['cause_home'] [0])) {
+		$cause_home = $custom["cause_home"] [0];
+		printf( $before . $cause_home . $after);
+	}
+}
+function cause_ailments( $before = '<div class="cause-ailments">' , $after = '</div>' ) {
+	$custom = get_post_custom();
+	if (isset($custom['cause_ailments']) && !empty($custom['cause_ailments'] [0])) {
+		$cause_ailments = $custom["cause_ailments"] [0];
+		printf( $before . $cause_ailments . $after);
+	}
+}
