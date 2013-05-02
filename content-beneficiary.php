@@ -28,7 +28,7 @@
                 <div class="entry-meta">
                     <?php cause_gender('<div class="cause-gender"><i class="icon-user icon-white"></i> ','</div>'); ?>
                     <?php cause_age('<div class="cause-age"><i class="icon-time icon-white"></i> ','</div>'); ?>
-                    <?php cause_home('<div class="cause-home"><i class="icon-map-marker icon-white"></i> ','</div>'); ?>
+                    <?php cause_home('<div class="cause-home"><i class="icon-flag icon-white"></i> From ','</div>'); ?>
                     <?php cause_ailments('<div class="cause-ailments"><i class="icon-heart icon-white"></i> ','</div>'); ?>
                     <?php cause_lang('<div class="cause-lang"><i class="icon-globe icon-white"></i> Speaks ','</div>'); ?>
                 </div><!-- .entry-meta -->
