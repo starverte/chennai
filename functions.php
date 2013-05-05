@@ -57,7 +57,7 @@ function flint_custom_header_setup() {
 			'url' => '%2$s/img/headers/radha.jpg',
 			'thumbnail_url' => '%2$s/img/headers/radha-thumb.jpg',
 			/* translators: header image description */
-			'description' => __( 'Pine Cone', 'chennai' )
+			'description' => __( 'radha', 'chennai' )
 		),
 		'sendhamarai' => array(
 			'url' => '%2$s/img/headers/sendhamarai.jpg',
@@ -81,7 +81,7 @@ function flint_custom_header_setup() {
 			'url' => '%2$s/img/headers/vijayalakshmi.jpg',
 			'thumbnail_url' => '%2$s/img/headers/vijayalakshmi-thumb.jpg',
 			/* translators: header image description */
-			'description' => __( 'vijayalakshmi Plant', 'chennai' )
+			'description' => __( 'vijayalakshmi', 'chennai' )
 		)
 	) );
 }
