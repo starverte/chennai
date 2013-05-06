@@ -41,9 +41,9 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<?php echo $fb_app_id; ?>";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed site container-fluid">
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header wrapper" role="banner">
+	<header id="masthead" class="site-header" role="banner">
     
     <?php if (current_theme_supports('custom-header')) { ?>
           
@@ -56,8 +56,8 @@
             
         <?php if (display_header_text()) { ?>
         	<div class="bastard-title">
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" ><?php bloginfo( 'name' ); ?></a></h1>
-                <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+                <h1 class="site-title hidden-phone"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" ><?php bloginfo( 'name' ); ?></a></h1>
+                <h2 class="site-description visible-desktop"><?php bloginfo( 'description' ); ?></h2>
             </div>
         <?php } ?>
 	</div><!-- #left -->
@@ -76,8 +76,8 @@
             	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
             </a>
 	        <div class="bastard-title">
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" ><?php bloginfo( 'name' ); ?></a></h1>
-                <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+                <h1 class="site-title hidden-phone"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" ><?php bloginfo( 'name' ); ?></a></h1>
+                <h2 class="site-description visible-desktop"><?php bloginfo( 'description' ); ?></h2>
             </div>
 		</hgroup>
         
@@ -110,4 +110,4 @@
         </nav><!-- .navbar -->
 	</header><!-- #masthead .site-header -->
 
-	<div id="main" class="site-main wrapper">
+	<div id="main" class="site-main row-fluid">
