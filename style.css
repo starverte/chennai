@@ -37,15 +37,19 @@ A spark sets a fire ablaze, and similarly the Sparks Framework is made up of 'sp
 body {
 	color: #fff;
 }
-a,
-a:visited {
+#content a,
+#content a:visited,
+#colophon a,
+#colophon a:visited {
 	color: #f08900;
 }
-a:hover {
+#content a:hover,
+#colophon a:hover {
 	color: #f4be3c;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Jura', sans-serif;
+	font-weight: normal;
 }
 #masthead hgroup {
 	background: #f9e470;
@@ -62,18 +66,6 @@ h1, h2, h3 {
 	display: none;
 	float: right;
 }
-@media screen and (min-width: 45em) {
-	.header {
-		display: block;
-	}
-}
-.site-title {
-	font-size: 36px;
-}
-.site-description {
-	display: none;
-	font-size: 15px;
-}
 .site-title, .site-description {
 	clear: none;
 	margin: 0.5em 0;
@@ -82,101 +74,6 @@ h1, h2, h3 {
 	background: #f08900;
 	color: #fff;
 }
-
-
-/* =Menu
------------------------------------------------ */
-
-.main-navigation {
-	background: none;
-	margin: 0 0 1em;
-}
-.main-navigation #s {
-	background: #fdfba7;
-	border: none;
-	border-radius: 0;
-	color: #a93b19;
-	display: none;
-	float: right;
-	line-height: 28px;
-	margin: 1px 0 0 0;
-}
-.main-small-navigation #s {
-	display: none;
-}
-/* @media screen and (min-width: 496px) */
-@media screen and (min-width: 31em) {
-	.site-description {
-		display: block;
-	}
-}
-/* @media screen and (min-width: 1024px) */
-@media screen and (min-width: 64em) {
-	.main-navigation #s {
-		display: block;
-		width: 25%!important;
-	}
-}
-/* @media screen and (min-width: 1096px) */
-@media screen and (min-width: 68.5em) {
-	.main-navigation #s {
-		width: 30%!important;
-	}
-}
-/* @media screen and (min-width: 1248px) */
-@media screen and (min-width: 78em) {
-	.main-navigation #s {
-		width: 35%!important;
-	}
-}
-.menu-toggle {
-	background: #f4be3c;
-	color: #a93b19;
-	border: 1px solid #464545;
-	font-family: "Open Sans", sans-serif;
-	font-weight: bold;
-	font-variant: small-caps;
-}
-.main-small-navigation a {
-	background: #fdfba7;
-	color: #a93b19;
-	border: 1px solid #464545;
-	margin: 0 3.333333% 0 0;
-}
-.main-small-navigation a:hover {
-	text-decoration: none;
-}
-.main-navigation a {
-	border: 1px solid #464545;
-	color: #a93b19;
-	font-size: 1.07em;
-	font-weight: bold;
-	font-variant: small-caps;
-}
-.main-navigation a:hover {
-	border: 1px solid #464545;
-	background: #f9e470;
-}
-.main-navigation ul li {
-	background: #f4be3c;
-}
-.main-navigation .give a,
-.main-small-navigation .give a {
-	background: #b62929;
-	color: #fff;
-	font-variant: normal;
-	font-weight: normal;
-	padding-left: 2em;
-	padding-right: 2em;
-	text-transform: uppercase;
-}
-.main-small-navigation .give {
-	color: #fff;
-}
-.main-navigation .give a:hover {
-	background: #a5181a;
-}
-
 
 /* =Content
 ----------------------------------------------- */
@@ -222,7 +119,7 @@ article {
 }
 .verse cite {
 	float: right;
-	font: 1.5em 'Jura', sans-serif;
+	font: 1.2em 'Jura', sans-serif;
 }
 
 
