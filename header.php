@@ -44,28 +44,28 @@ else {
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 	<?php if (current_theme_supports('custom-header')) { ?>
-		<hgroup class="row-fluid">
+		<hgroup class="row-fluid hidden-phone">
 			<div id="left" class="span9">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" <?php if ( display_header_text() ) { ?> class="span2 hidden-phone"<?php } ?>>
+				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" <?php if ( display_header_text() ) { ?> class="span3"<?php } ?>>
 					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				</a>
 				<?php if ( display_header_text() ) { ?>
-				<div class="site-branding <?php if ( ! empty( $header_image ) ) { ?>span10<?php } ?>">
-					<h1 class="site-title hidden-phone"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<div class="site-branding span9">
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description visible-desktop"><?php bloginfo( 'description' ); ?></h2>
 				</div>
 				<?php } /* if ( display_header_text() ) */ ?>
 			</div><!-- #left -->
 			<?php $header_image = get_header_image();
 			if ( ! empty( $header_image ) ) { ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" <?php if ( display_header_text() ) { ?> class="span2 hidden-phone"<?php } ?>>
-					<img class ="header span3 visible-desktop" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="span3 hidden-phone">
+					<img class="header visible-desktop" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 				</a>
 			<?php } /* if ( ! empty( $header_image ) ) */ ?>
 		</hgroup>
 	<?php } /* if (current_theme_supports('custom-header')) */ ?>
 
-		<nav role="navigation" class="navbar">
+		<nav role="navigation" class="navbar navbar-inverse">
 			<h1 class="screen-reader-text"><?php _e( 'Menu', 'flint' ); ?></h1>
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flint' ); ?>"><?php _e( 'Skip to content', 'flint' ); ?></a></div>
 			<div class="navbar-inner">
