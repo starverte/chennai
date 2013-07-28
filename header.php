@@ -40,26 +40,26 @@ else {
 	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<?php echo $fb_app_id; ?>";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div id="page" class="hfeed site container-fluid">
+<div id="page" class="hfeed site container">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 	<?php if (current_theme_supports('custom-header')) { ?>
-		<hgroup class="row-fluid hidden-phone">
-			<div id="left" class="span9">
-				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" <?php if ( display_header_text() ) { ?> class="span3"<?php } ?>>
+		<hgroup class="row hidden-sm">
+			<div id="left" class="col-lg-9">
+				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" <?php if ( display_header_text() ) { ?> class="col-lg-3"<?php } ?>>
 					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				</a>
 				<?php if ( display_header_text() ) { ?>
-				<div class="site-branding span9">
+				<div class="site-branding col-lg-9">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description visible-desktop"><?php bloginfo( 'description' ); ?></h2>
+					<h2 class="site-description visible-lg"><?php bloginfo( 'description' ); ?></h2>
 				</div>
 				<?php } /* if ( display_header_text() ) */ ?>
 			</div><!-- #left -->
 			<?php $header_image = get_header_image();
 			if ( ! empty( $header_image ) ) { ?>
-				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="span3 hidden-phone">
-					<img class="header visible-desktop" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="col-lg-3 hidden-sm">
+					<img class="header visible-lg" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 				</a>
 			<?php } /* if ( ! empty( $header_image ) ) */ ?>
 		</hgroup>
@@ -83,7 +83,7 @@ else {
                     
 					<div class="nav-collapse collapse">
 						<?php wp_nav_menu( array( 'menu_class' => 'nav', 'container' => false, 'theme_location' => 'primary', 'walker' => new Flint_Bootstrap_Menu ) ); ?>
-						<form method="get" class="navbar-search pull-right visible-desktop" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+						<form method="get" class="navbar-search pull-right visible-lg" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 							<input type="text" class="search-query" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="Search">
 						</form>
 					</div><!-- .nav-collapse -->
@@ -92,4 +92,4 @@ else {
         	</nav><!-- .navbar -->
 	</header><!-- #masthead -->
 
-	<div id="main" class="site-main row-fluid">
+	<div id="main" class="site-main row">
