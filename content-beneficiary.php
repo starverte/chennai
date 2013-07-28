@@ -5,18 +5,18 @@
  */
 ?>
 <?php if ( current_user_can('edit_pages') ) { ?>
-	<div class="container-fluid">
-	<div class="row-fluid">
+	<div class="container">
+	<div class="row">
                 <a class="btn btn-info btn-small" href="<?php echo get_edit_post_link(); ?>" style="color:#fff;float:right;"><i class="icon-edit icon-white"></i> Edit</a>
 	</div>
 </div>
 		<?php } ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('container-fluid'); ?>>
-    <div class="row-fluid">
-        <div class="span4">
+<article id="post-<?php the_ID(); ?>" <?php post_class('container'); ?>>
+    <div class="row">
+        <div class="col-lg-4">
         	<?php the_post_thumbnail('large'); ?>
-        </div><!-- .span4 -->
-        <div class="span8">
+        </div><!-- .col-lg-4 -->
+        <div class="col-lg-8">
             <header class="entry-header">
                 <h1 class="entry-title">
                     <?php if (is_archive()) { ?>
@@ -43,6 +43,6 @@
             <footer class="entry-meta">
 		
             </footer><!-- .entry-meta -->
-        </div><!-- .span8 -->
-    </div><!-- .row-fluid -->
+        </div><!-- .col-lg-8 -->
+    </div><!-- .row -->
 </article><!-- #post-<?php the_ID(); ?> -->
