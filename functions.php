@@ -2,8 +2,7 @@
 /**
  * Flint functions and definitions
  *
- * @package Flint
- * @sub-package Chennai
+ * @package Flint\Chennai
  * @since Chennai 0.9
  */
 
