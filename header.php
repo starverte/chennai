@@ -4,8 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package Flint
- * @sub-package Chennai
+ * @package Flint\Chennai
  */
 ?><!DOCTYPE html>
 <!--[if lt IE 9]><html <?php language_attributes(); ?> class="ie"><![endif]-->
