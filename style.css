@@ -7,7 +7,7 @@ Description:    Child theme for Flint; developed for Vuyiroli site.
 Template:       flint
 Version:        0.9
 License:        GPLv2 or later
-License URI:	license.txt
+License URI:  license.txt
 Tags:           sparks
 
 A spark sets a fire ablaze, and similarly the Sparks Framework is made up of 'sparks' that help initiate the creative process of website development within WordPress. Often times to start a fire, a person uses flint and steel. With the Sparks Framework it is the same way. 'Flint' (the core theme) and 'Steel' (the core plugin) makeup the foundation of the framework. Then, additional child themes and plugins extend the functionality and user experience.
@@ -35,54 +35,54 @@ A spark sets a fire ablaze, and similarly the Sparks Framework is made up of 'sp
 @import url(http://fonts.googleapis.com/css?family=Jura);
 
 body {
-	color: #fff;
+  color: #fff;
 }
 #content a,
 #content a:visited,
 #colophon a,
 #colophon a:visited {
-	color: #f08900;
+  color: #f08900;
 }
 #content a:hover,
 #colophon a:hover {
-	color: #f4be3c;
+  color: #f4be3c;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Jura', sans-serif;
-	font-weight: normal;
+  font-family: 'Jura', sans-serif;
+  font-weight: normal;
 }
 #masthead hgroup {
-	background: #f9e470;
-	min-height: 120px;
+  background: #f9e470;
+  min-height: 120px;
 }
 .header {
-	border-left: 5px solid #464545;
-	display: none;
-	float: right;
+  border-left: 5px solid #464545;
+  display: none;
+  float: right;
 }
 .site-title, .site-description {
-	clear: none;
-	margin: 0.5em 0;
+  clear: none;
+  margin: 0.5em 0;
 }
 ::selection {
-	background: #f08900;
-	color: #fff;
+  background: #f08900;
+  color: #fff;
 }
 @media (max-width:768px) {
-	.navbar {
-		margin-top: 20px;
-	}
+  .navbar {
+    margin-top: 20px;
+  }
 }
 
 /* =Content
 ----------------------------------------------- */
 
 article {
-	background: #464545;
+  background: #464545;
 }
 .entry-title a,
 .entry-title a:hover {
-	color: #fff;
+  color: #fff;
 }
 
 
@@ -90,35 +90,35 @@ article {
 ----------------------------------------------- */
 
 .widget {
-	background: #531f20;
+  background: #531f20;
 }
 .widget a,
 .widget a:visited,
 .widget a:hover {
-	color: #fdfba7;
+  color: #fdfba7;
 }
 .link-widget-link .link-widget {
-	background: #79323a;
-	color: #fff;
+  background: #79323a;
+  color: #fff;
 }
 .link-widget-link:hover .link-widget {
-	background: #531f20;
-	color: #fff;
+  background: #531f20;
+  color: #fff;
 }
 .give .link-widget {
-	background: #b62929;
-	color: #fff;
+  background: #b62929;
+  color: #fff;
 }
 .give:hover .link-widget {
-	background: #a5181a;
-	color: #fff;
+  background: #a5181a;
+  color: #fff;
 }
 .verse {
-	height: 0.1em;
+  height: 0.1em;
 }
 .verse cite {
-	float: right;
-	font: 1.2em 'Jura', sans-serif;
+  float: right;
+  font: 1.2em 'Jura', sans-serif;
 }
 
 
@@ -126,34 +126,34 @@ article {
 ----------------------------------------------- */
 
 #colophon {
-	background: #464545;
-	line-height: 2em;
+  background: #464545;
+  line-height: 2em;
 }
 
 /* =Comments
 ----------------------------------------------- */
 
 .commentlist .thread-odd article {
-	background: #531f20;
+  background: #531f20;
 }
 .commentlist .thread-even article {
-	background: #464545;
+  background: #464545;
 }
 .commentlist .thread-odd .depth-2 article {
-	background: #612425;
+  background: #612425;
 }
 .commentlist .thread-even .depth-2 article {
-	background: #525151;
+  background: #525151;
 }
 .commentlist .thread-odd .depth-3 article {
-	background: #6e292a;
+  background: #6e292a;
 }
 .commentlist .thread-even .depth-3 article {
-	background: #5e5d5d;
+  background: #5e5d5d;
 }
 .commentlist .thread-odd .depth-4 article {
-	background: #7a2d2f;
+  background: #7a2d2f;
 }
 .commentlist .thread-even .depth-4 article {
-	background: #6b6a6a;
+  background: #6b6a6a;
 }

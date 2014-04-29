@@ -26,69 +26,69 @@
 <?php $sparks_options = get_option('sparks_options');
 
 if (isset($sparks_options['fb_app_id'])) {
-	$fb_app_id = $sparks_options["fb_app_id"];
+  $fb_app_id = $sparks_options["fb_app_id"];
 }
 else {
-	$fb_app_id = '';
+  $fb_app_id = '';
 } ?>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<?php echo $fb_app_id; ?>";
-	fjs.parentNode.insertBefore(js, fjs);
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<?php echo $fb_app_id; ?>";
+  fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="page" class="hfeed site container">
-	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header" role="banner">
-	<?php if (current_theme_supports('custom-header')) { ?>
-		<hgroup class="row hidden-sm">
-			<div id="left" class="col-lg-9">
-				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" <?php if ( display_header_text() ) { ?> class="col-lg-3"<?php } ?>>
-					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-				</a>
-				<?php if ( display_header_text() ) { ?>
-				<div class="site-branding col-lg-9">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description visible-lg"><?php bloginfo( 'description' ); ?></h2>
-				</div>
-				<?php } /* if ( display_header_text() ) */ ?>
-			</div><!-- #left -->
-			<?php $header_image = get_header_image();
-			if ( ! empty( $header_image ) ) { ?>
-				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="col-lg-3 hidden-sm">
-					<img class="header visible-lg" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
-				</a>
-			<?php } /* if ( ! empty( $header_image ) ) */ ?>
-		</hgroup>
-	<?php } /* if (current_theme_supports('custom-header')) */ ?>
+  <?php do_action( 'before' ); ?>
+  <header id="masthead" class="site-header" role="banner">
+  <?php if (current_theme_supports('custom-header')) { ?>
+    <hgroup class="row hidden-sm">
+      <div id="left" class="col-lg-9">
+        <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" <?php if ( display_header_text() ) { ?> class="col-lg-3"<?php } ?>>
+          <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+        </a>
+        <?php if ( display_header_text() ) { ?>
+        <div class="site-branding col-lg-9">
+          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+          <h2 class="site-description visible-lg"><?php bloginfo( 'description' ); ?></h2>
+        </div>
+        <?php } /* if ( display_header_text() ) */ ?>
+      </div><!-- #left -->
+      <?php $header_image = get_header_image();
+      if ( ! empty( $header_image ) ) { ?>
+        <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="col-lg-3 hidden-sm">
+          <img class="header visible-lg" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+        </a>
+      <?php } /* if ( ! empty( $header_image ) ) */ ?>
+    </hgroup>
+  <?php } /* if (current_theme_supports('custom-header')) */ ?>
 
-		<nav role="navigation" class="navbar navbar-inverse">
-			<h1 class="screen-reader-text"><?php _e( 'Menu', 'flint' ); ?></h1>
-			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flint' ); ?>"><?php _e( 'Skip to content', 'flint' ); ?></a></div>
-			<div class="navbar-inner">
-				<div class="container">
+    <nav role="navigation" class="navbar navbar-inverse">
+      <h1 class="screen-reader-text"><?php _e( 'Menu', 'flint' ); ?></h1>
+      <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flint' ); ?>"><?php _e( 'Skip to content', 'flint' ); ?></a></div>
+      <div class="navbar-inner">
+        <div class="container">
                 
-					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
                     
-					<!-- Be sure to leave the brand out there if you want it shown -->
-					<a class="brand hidden-desktop" href="<?php echo home_url(); ?>"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a>
+          <!-- Be sure to leave the brand out there if you want it shown -->
+          <a class="brand hidden-desktop" href="<?php echo home_url(); ?>"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a>
                     
-					<div class="nav-collapse collapse">
-						<?php wp_nav_menu( array( 'menu_class' => 'nav', 'container' => false, 'theme_location' => 'primary', 'walker' => new Flint_Bootstrap_Menu ) ); ?>
-						<form method="get" class="navbar-search pull-right visible-lg" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-							<input type="text" class="search-query" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="Search">
-						</form>
-					</div><!-- .nav-collapse -->
-				</div><!-- .container -->
-			</div><!-- .navbar-inner -->
-        	</nav><!-- .navbar -->
-	</header><!-- #masthead -->
+          <div class="nav-collapse collapse">
+            <?php wp_nav_menu( array( 'menu_class' => 'nav', 'container' => false, 'theme_location' => 'primary', 'walker' => new Flint_Bootstrap_Menu ) ); ?>
+            <form method="get" class="navbar-search pull-right visible-lg" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+              <input type="text" class="search-query" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="Search">
+            </form>
+          </div><!-- .nav-collapse -->
+        </div><!-- .container -->
+      </div><!-- .navbar-inner -->
+          </nav><!-- .navbar -->
+  </header><!-- #masthead -->
 
-	<div id="main" class="site-main row">
+  <div id="main" class="site-main row">
