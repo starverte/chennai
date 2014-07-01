@@ -51,14 +51,14 @@ else {
         <?php if ( display_header_text() ) { ?>
         <div class="site-branding col-lg-9">
           <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-          <h2 class="site-description visible-lg"><?php bloginfo( 'description' ); ?></h2>
+          <h2 class="site-description visible-lg-block"><?php bloginfo( 'description' ); ?></h2>
         </div>
         <?php } /* if ( display_header_text() ) */ ?>
       </div><!-- #left -->
       <?php $header_image = get_header_image();
       if ( ! empty( $header_image ) ) { ?>
         <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="col-lg-3 hidden-sm">
-          <img class="header visible-lg" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+          <img class="header visible-lg-block" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
         </a>
       <?php } /* if ( ! empty( $header_image ) ) */ ?>
     </hgroup>
@@ -82,7 +82,7 @@ else {
                     
           <div class="nav-collapse collapse">
             <?php wp_nav_menu( array( 'menu_class' => 'nav', 'container' => false, 'theme_location' => 'primary', 'walker' => new Flint_Bootstrap_Menu ) ); ?>
-            <form method="get" class="navbar-search pull-right visible-lg" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+            <form method="get" class="navbar-search dropdown-menu-right visible-lg-block" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
               <input type="text" class="search-query" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="Search">
             </form>
           </div><!-- .nav-collapse -->
