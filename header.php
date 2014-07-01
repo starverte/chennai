@@ -69,17 +69,17 @@ else {
       <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flint' ); ?>"><?php _e( 'Skip to content', 'flint' ); ?></a></div>
       <div class="navbar-inner">
         <div class="container">
-                
+
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-                    
+
           <!-- Be sure to leave the brand out there if you want it shown -->
           <a class="brand hidden-desktop" href="<?php echo home_url(); ?>"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a>
-                    
+
           <div class="nav-collapse collapse">
             <?php wp_nav_menu( array( 'menu_class' => 'nav', 'container' => false, 'theme_location' => 'primary', 'walker' => new Flint_Bootstrap_Menu ) ); ?>
             <form method="get" class="navbar-search dropdown-menu-right visible-lg-block" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">

@@ -32,7 +32,7 @@ function flint_custom_header_setup() {
     define( 'HEADER_IMAGE_HEIGHT', $args['height'] );
     add_custom_image_header( $args['wp-head-callback'], $args['admin-head-callback'], $args['admin-preview-callback'] );
   }
-  
+
   register_default_headers( array(
     'basha' => array(
       'url' => '%2$s/img/headers/basha.jpg',
@@ -97,13 +97,13 @@ function chennai_add_custom_boxes() {
 function chennai_beneficiary_meta() {
   global $post;
   $custom = get_post_custom($post->ID);
-  
+
 ?>
-    <p><label>Native Language</label> 
+    <p><label>Native Language</label>
   <input type="text" size="10" name="cause_lang" value="<?php if (isset($custom['cause_lang'])) { echo $custom["cause_lang"] [0]; } ?>" /></p>
-    <p><label>Native Area</label> 
+    <p><label>Native Area</label>
   <input type="text" size="10" name="cause_home" value="<?php if (isset($custom['cause_home'])) { echo $custom["cause_home"] [0]; } ?>" /></p>
-    <p><label>Physical Ailments</label> 
+    <p><label>Physical Ailments</label>
   <input type="text" size="10" name="cause_ailments" value="<?php if (isset($custom['cause_ailments'])) { echo $custom["cause_ailments"] [0]; } ?>" /></p>
 <?php }
 

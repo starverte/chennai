@@ -13,20 +13,20 @@ Tags:           sparks
 A spark sets a fire ablaze, and similarly the Sparks Framework is made up of 'sparks' that help initiate the creative process of website development within WordPress. Often times to start a fire, a person uses flint and steel. With the Sparks Framework it is the same way. 'Flint' (the core theme) and 'Steel' (the core plugin) makeup the foundation of the framework. Then, additional child themes and plugins extend the functionality and user experience.
 
     Copyright 2013  Star Verte LLC  (email : info@starverte.com)
-    
+
     This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as 
+    it under the terms of the GNU General Public License, version 2, as
     published by the Free Software Foundation.
-    
+
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-    
+
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-    
+
     You should have received a copy of the GNU General Public License
     along with Flint.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -48,25 +48,25 @@ body {
   color: #f4be3c;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
   font-weight: normal;
 }
 #masthead hgroup {
-  background: #f9e470;
   min-height: 120px;
+  background: #f9e470;
 }
 .header {
-  border-left: 5px solid #464545;
   display: none;
   float: right;
+  border-left: 5px solid #464545;
 }
 .site-title, .site-description {
-  clear: none;
   margin: 0.5em 0;
+  clear: none;
 }
 ::selection {
-  background: #f08900;
   color: #fff;
+  background: #f08900;
 }
 @media (max-width:768px) {
   .navbar {
@@ -98,27 +98,27 @@ article {
   color: #fdfba7;
 }
 .link-widget-link .link-widget {
-  background: #79323a;
   color: #fff;
+  background: #79323a;
 }
 .link-widget-link:hover .link-widget {
-  background: #531f20;
   color: #fff;
+  background: #531f20;
 }
 .give .link-widget {
-  background: #b62929;
   color: #fff;
+  background: #b62929;
 }
 .give:hover .link-widget {
-  background: #a5181a;
   color: #fff;
+  background: #a5181a;
 }
 .verse {
   height: 0.1em;
 }
 .verse cite {
   float: right;
-  font: 1.2em 'Jura', sans-serif;
+  font: 1.2em "Jura", sans-serif;
 }
 
 
@@ -126,8 +126,8 @@ article {
 ----------------------------------------------- */
 
 #colophon {
-  background: #464545;
   line-height: 2em;
+  background: #464545;
 }
 
 /* =Comments

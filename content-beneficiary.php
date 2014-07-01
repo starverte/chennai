@@ -24,7 +24,7 @@
                     <?php } else {
                         the_title();
                     }?></h1>
-        
+
                 <div class="entry-meta">
                     <?php cause_gender('<div class="cause-gender"><i class="icon-user icon-white"></i> ','</div>'); ?>
                     <?php cause_age('<div class="cause-age"><i class="icon-time icon-white"></i> ','</div>'); ?>
@@ -33,15 +33,15 @@
                     <?php cause_lang('<div class="cause-lang"><i class="icon-globe icon-white"></i> Speaks ','</div>'); ?>
                 </div><!-- .entry-meta -->
             </header><!-- .entry-header -->
-        
+
             <div class="entry-content">
                 <?php the_content(); ?>
     <a class="btn btn-danger" href="#" style="color:#fff;float:right;">Donate</a>
                 <?php flint_link_pages( array( 'before' => '<div class="pagination"><ul>', 'after' => '</ul></div>' ) ); ?>
             </div><!-- .entry-content -->
-        
+
             <footer class="entry-meta">
-    
+
             </footer><!-- .entry-meta -->
         </div><!-- .col-lg-8 -->
     </div><!-- .row -->
